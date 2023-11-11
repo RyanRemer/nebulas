@@ -7,7 +7,7 @@
 shader = ExtResource("1_2vmpn")
 shader_parameter/x_tiles = 4.0
 shader_parameter/y_tiles = 3.0
-shader_parameter/pole_fading = 3.0
+shader_parameter/pole_fading = -1.0
 shader_parameter/nebula_image = ExtResource("2_o34q8")
 
 [resource]
