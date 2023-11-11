@@ -1,3 +1,9 @@
-[gd_resource type="Sky" format=3 uid="uid://qlmrokfcnlcu"]
+[gd_resource type="Sky" load_steps=3 format=3 uid="uid://qlmrokfcnlcu"]
+
+[ext_resource type="Shader" path="res://nebua.gdshader" id="1_2vmpn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_abbr0"]
+shader = ExtResource("1_2vmpn")
 
 [resource]
+sky_material = SubResource("ShaderMaterial_abbr0")

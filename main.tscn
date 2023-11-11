@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://ddnrrb65t5x5f"]
+[gd_scene load_steps=3 format=3 uid="uid://ddnrrb65t5x5f"]
+
+[ext_resource type="Sky" uid="uid://qlmrokfcnlcu" path="res://nebula_sky.tres" id="1_ob6lo"]
+
+[sub_resource type="Environment" id="Environment_3hf5v"]
+background_mode = 2
+sky = ExtResource("1_ob6lo")
 
 [node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3hf5v")
