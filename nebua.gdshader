@@ -3,6 +3,7 @@ shader_type sky;
 uniform sampler2D nebula_image;
 uniform float x_tiles = 1.0;
 uniform float y_tiles = 1.0;
+uniform float pole_fading = 3.0;
 
 void sky() {
 	vec2 texture_coords = vec2(
@@ -12,8 +13,8 @@ void sky() {
 	vec3 nebula_color = texture(nebula_image, texture_coords).rgb;
 	
 	// hide the poles
-	float pole_distance = cos(abs(EYEDIR.y) * PI * 0.6);
-	float pole_opacity = pole_distance * pole_distance;
+	float pole_distance = cos(abs(EYEDIR.y) * PI * 0.5);
+	float pole_opacity = pow(pole_distance, pole_fading);
 	
 	COLOR = nebula_color * pole_opacity;
 }
