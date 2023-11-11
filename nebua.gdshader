@@ -11,7 +11,8 @@ void sky() {
 	);
 	vec3 nebula_color = texture(nebula_image, texture_coords).rgb;
 	
-	float pole_opacity = cos(EYEDIR.y * PI * 0.6);
+	// hide the poles
+	float pole_opacity = pow(abs(cos(EYEDIR.y * PI)), 2.0);
 	
 	COLOR = nebula_color * pole_opacity;
 }
