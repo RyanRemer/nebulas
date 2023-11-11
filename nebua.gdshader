@@ -14,7 +14,7 @@ void sky() {
 	
 	// hide the poles
 	float pole_distance = cos(abs(EYEDIR.y) * PI * 0.5);
-	float pole_opacity = pow(pole_distance, pole_fading);
+	float pole_opacity = clamp(pow(pole_distance, pole_fading), 0.0, 1.0);
 	
 	COLOR = nebula_color * pole_opacity;
 }
