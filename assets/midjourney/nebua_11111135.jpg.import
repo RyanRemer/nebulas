@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4lpva5t8j5d0"
-path.s3tc="res://.godot/imported/nebua_11111113.png-1ae13b5d11f2d184a4c0f91c0fc4548c.s3tc.ctex"
+uid="uid://v2xdq0sca00a"
+path.s3tc="res://.godot/imported/nebua_11111135.jpg-4bc959b56a738b5f7358d528cc8de414.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/midjourney/nebua_11111113.png"
-dest_files=["res://.godot/imported/nebua_11111113.png-1ae13b5d11f2d184a4c0f91c0fc4548c.s3tc.ctex"]
+source_file="res://assets/midjourney/nebua_11111135.jpg"
+dest_files=["res://.godot/imported/nebua_11111135.jpg-4bc959b56a738b5f7358d528cc8de414.s3tc.ctex"]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
-compress/channel_pack=1
+compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
