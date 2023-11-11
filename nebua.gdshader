@@ -9,5 +9,9 @@ void sky() {
 		SKY_COORDS.x * x_tiles, // longitude
 		SKY_COORDS.y * y_tiles // latitude
 	);
-	COLOR = texture(nebula_image, texture_coords).rgb;
+	vec3 nebula_color = texture(nebula_image, texture_coords).rgb;
+	
+	float pole_opacity = 1.0 - abs(EYEDIR.y);
+	
+	COLOR = nebula_color * pole_opacity;
 }
