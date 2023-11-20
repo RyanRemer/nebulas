@@ -1,12 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddnrrb65t5x5f"]
+[gd_scene load_steps=6 format=3 uid="uid://ddnrrb65t5x5f"]
 
-[ext_resource type="Sky" uid="uid://qlmrokfcnlcu" path="res://nebula_sky.tres" id="1_ob6lo"]
+[ext_resource type="Shader" path="res://nebua.gdshader" id="1_fheuc"]
+[ext_resource type="Texture2D" uid="uid://d4lpva5t8j5d0" path="res://assets/midjourney/nebua_11111113.png" id="2_qukom"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_goxmu"]
+shader = ExtResource("1_fheuc")
+shader_parameter/x_tiles = 1.0
+shader_parameter/y_tiles = 2.0
+shader_parameter/pole_fading = 3.0
+shader_parameter/transparency = 1.0
+shader_parameter/nebula_image = ExtResource("2_qukom")
+
+[sub_resource type="Sky" id="Sky_63qm5"]
+sky_material = SubResource("ShaderMaterial_goxmu")
 
 [sub_resource type="Environment" id="Environment_3hf5v"]
 background_mode = 2
-sky = ExtResource("1_ob6lo")
+sky = SubResource("Sky_63qm5")
 
 [node name="Main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3hf5v")
+
+[node name="Camera3D" type="Camera3D" parent="."]

@@ -1,14 +1,15 @@
 [gd_resource type="Sky" load_steps=4 format=3 uid="uid://qlmrokfcnlcu"]
 
 [ext_resource type="Shader" path="res://nebua.gdshader" id="1_2vmpn"]
-[ext_resource type="Texture2D" uid="uid://v2xdq0sca00a" path="res://assets/midjourney/nebua_11111135.jpg" id="2_opli2"]
+[ext_resource type="Texture2D" uid="uid://d4lpva5t8j5d0" path="res://assets/midjourney/nebua_11111113.png" id="2_si5bi"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_abbr0"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0yhcx"]
 shader = ExtResource("1_2vmpn")
 shader_parameter/x_tiles = 1.0
 shader_parameter/y_tiles = 2.0
 shader_parameter/pole_fading = 3.0
-shader_parameter/nebula_image = ExtResource("2_opli2")
+shader_parameter/transparency = 1.0
+shader_parameter/nebula_image = ExtResource("2_si5bi")
 
 [resource]
-sky_material = SubResource("ShaderMaterial_abbr0")
+sky_material = SubResource("ShaderMaterial_0yhcx")
